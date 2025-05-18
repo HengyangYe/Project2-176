@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Fields of Dispute – Rules</title>
+<style>
+ body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;max-width:920px;margin:40px auto;padding:0 20px;}
+ h1,h2{margin:1.4em 0 0.5em;font-weight:700}
+ table{border-collapse:collapse;width:100%;margin:0.6em 0;}
+ th,td{border:1px solid #aaa;padding:6px 8px;text-align:left;vertical-align:top}
+ li{margin:0.3em 0;}
+ code{background:#eee;padding:2px 4px;border-radius:3px;}
+</style>
+</head>
+<body>
+<h1>Fields of Dispute</h1>
+
+<h2>Initial Setup</h2>
+<ul>
+<li>Each player: <strong>Meeple ×5</strong>, <strong>Money ×3</strong>, <strong>Fuel ×3</strong>, <strong>PolCap ×3</strong></li>
+<li>Place the four policy cards face‑up (<em>Active</em>) on the Policy Board.</li>
+<li>Set counters: <code>Price 2 | Public Support 5 | Concessions 0 | Round 1</code></li>
+<li>Shuffle the red Event deck and leave it face‑down.</li>
+</ul>
+
+<h2>Round Sequence (6 Rounds)</h2>
+<ol>
+<li><strong>Event</strong> – Flip the top event card and resolve its text.<br>If a card was reserved by Media last round, resolve it first.</li>
+<li><strong>Place Workers</strong> – Players alternate placing <em>one</em> meeple at a time onto any open action slot until all five are placed.</li>
+<li><strong>Resolve Actions (left → right)</strong>
+<table>
+<tr><th>Action</th><th>Cost</th><th>Effect</th></tr>
+<tr><td>Blockade</td><td>1 Fuel / meeple</td><td>+1 Personal Support and +1 Public Support</td></tr>
+<tr><td>Lobby EU</td><td>1 PolCap</td><td>Roll d6; on 4‑6 succeed:<br>• <em>Active</em> → flip to <em>Delayed</em><br>• <em>Delayed</em> → drag to <em>Enacted</em><br>Leave the acting meeple on the card as a control marker.</td></tr>
+<tr><td>Negotiate Aid</td><td>1 Money</td><td><strong>Price −1</strong></td></tr>
+<tr><td>Media</td><td>—</td><td>+1 Personal Support; reserve the next event card face‑down for next round.</td></tr>
+<tr><td>Farm Ops</td><td>1 Fuel + 1 Money</td><td>Gain 2 PolCap</td></tr>
+</table></li>
+<li><strong>End Step</strong>
+<ul>
+<li>Return action meeples (meeple on policy cards stay as markers).</li>
+<li>If <strong>Public Support ≥ 8</strong>: Concessions +1, then Public Support −8 (repeat if still ≥ 8).</li>
+<li>Round +1; pass the start‑player marker.</li>
+</ul></li>
+</ol>
+
+<h2>Price Track Effects</h2>
+<table>
+<tr><th>Price value</th><th>End‑step adjustment</th></tr>
+<tr><td>0 – 1</td><td>Public Support −1</td></tr>
+<tr><td>2 – 3</td><td>No effect</td></tr>
+<tr><td>4 – 5</td><td>Public Support +1</td></tr>
+<tr><td>6 +</td><td>Public Support +2</td></tr>
+</table>
+
+<h2>Scoring after Round 6</h2>
+<ul>
+<li>Personal Support</li>
+<li>Concessions × 3</li>
+<li>Policies with <em>your</em> meeple in <em>Delayed</em> × 2</li>
+<li>Policies with <em>your</em> meeple in <em>Enacted</em> × 3</li>
+<li>Left‑over resources × 1</li>
+</ul>
+
+<h2>Event Deck (12 cards)</h2>
+<table>
+<tr><th>Card</th><th>Effect</th></tr>
+<tr><td>Diesel Price Spike</td><td>All players −1 Fuel; Price +1</td></tr>
+<tr><td>Nitrogen Deadline</td><td>If Nitrogen Cap is Active → Enacted; if Delayed → Enacted</td></tr>
+<tr><td>Cheap Imports Surge</td><td>Price −1; all players −1 Money; if Import Tariffs Active → Enacted</td></tr>
+<tr><td>Pesticide Ban Vote</td><td>If Pesticide Rules Active → Delayed; if Delayed → Enacted</td></tr>
+<tr><td>Viral Tractor Convoy</td><td>Public Support +2</td></tr>
+<tr><td>Govt Aid Rumor</td><td>Each player +1 Money (if Concessions ≥ 1, gain +1 Money extra)</td></tr>
+<tr><td>Drought Hits Yields</td><td>Price +1; all players −1 Money</td></tr>
+<tr><td>Transport Strike</td><td>This round Blockade costs 0 Fuel and grants +1 Support; Farm Ops unusable</td></tr>
+<tr><td>Snap Election</td><td>If Public Support ≥ 4: Concessions +1 and set Public Support to 4</td></tr>
+<tr><td>Policy Draft Leaked</td><td>Each player +1 PolCap; this round Lobby succeeds on 3‑6</td></tr>
+<tr><td>Opinion Poll Shift</td><td>If Price > 2: Public Support +2; otherwise −2</td></tr>
+<tr><td>Emergency EU Summit</td><td>All Delayed policies revert to Active; Price −1</td></tr>
+</table>
+
+<h2>Policy Cards</h2>
+<ul>
+<li>Diesel Subsidy</li>
+<li>Nitrogen Cap</li>
+<li>Import Tariffs</li>
+<li>Pesticide Rules</li>
+</ul>
+<p>Each policy progresses <em>Active → Delayed → Enacted</em> via Lobby EU or events. Your meeple on a policy marks control for scoring.</p>
+
+</body>
+</html>
